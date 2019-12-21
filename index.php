@@ -2,11 +2,11 @@
 
 require_once ("config.php");
 
-$sql = new Sql();
+$bunito = new Users();
 
-$user = $sql->query("SELECT * FROM login_admin");
+$bunito->loadById(3);
 
-echo json_encode($user);
+echo $bunito;
 
 
  ?>
