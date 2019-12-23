@@ -32,7 +32,7 @@ class Sql extends PDO {
 
 	}
 
-	public function query ($pullBank, $parametersFinal = array()):array {
+	public function query($pullBank, $parametersFinal = array()):array {
 
 		$consult = $this->modifyBank($pullBank,$parametersFinal);
 
